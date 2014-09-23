@@ -1,0 +1,36 @@
+#!/bin/sh
+#2014-09-23 19:27:29
+FILENAME=httpd-2.2.27.tar.gz
+SRC_URL="http://mirrors.cnnic.cn/apache/httpd/httpd-2.2.27.tar.gz"
+cd  /usr/local/src
+if [ ! -f $FILENAME ];then
+wget $SRC_URL
+[ $? -ne 0 ] && echo "ERROR:Download source file fail,and exit !" && exit 1
+fi
+
+tar zxvf $FILENAME >>/dev/null 
+
+SHORT_NAME=`echo $FILENAME|sed -n s/\.tar\.gz//gp`
+
+if [ ! -d  $SHORT_NAME ];then
+echo "ERROR:The  $SHORT_NAME is not exsit!" && exit 1
+fi
+rpm -qa |grep openssl
+[ $? -ne 0 ] && echo "ERROR:openssl is not installed!" && exit 1
+
+cd $SHORT_NAME
+./configure --prefix=/usr/local/apache2 --enable-so --enable-rewrite --enable-ssl --enable-deflate --enable-headers --enable-expires --disable-status --disable-autoindex --disable-asis --disable-negotiation --disable-actions --disable-userdir || exit 1
+make  || exit 1
+make install || exit 1
+
+sed -i '$a\ServerSignature off' /usr/local/apache2/conf/httpd.conf
+sed -i '$a\ServerTokens prod' /usr/local/apache2/conf/httpd.conf
+sed -i 's/Options Indexes FollowSymLinks/Options -Indexes FollowSymLinks/' /usr/local/apache2/conf/httpd.conf
+cat >> /usr/local/apache2/conf/httpd.conf <<eof
+<FilesMatch \.(?i:ini|rar|log|txt|bak)$>
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+eof
+rm -fr /usr/local/apache2/manual/*
+rm -fr /usr/local/apache2/icons/*
