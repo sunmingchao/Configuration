@@ -7,6 +7,35 @@
 # See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
 #
 UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
+UUID=6b4278b8-4e6b-49d5-b241-f6b6c49ad59f /                       ext4    defaults        1 1
 UUID=63006ddc-0314-443b-b004-434b68737a92 /boot                   ext4    defaults        1 2
 UUID=7afa9ef3-4547-441c-ae7f-cd5281529ba1 swap                    swap    defaults        0 0
 tmpfs                   /dev/shm                tmpfs   defaults        0 0
